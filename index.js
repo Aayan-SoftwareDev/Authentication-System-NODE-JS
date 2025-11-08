@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true })); // for form data
 // The PORT number
 const PORT = 8000;
 
-const url = "mongodb+srv://Ayan_dev:BrkfrgIKGrpShklU@cluster0.bc2t4wp.mongodb.net/?appName=Cluster0";
+const url = "Your_URL_here";
 connectMongoDB(url);
 
 // If POST request is sent to /user, it will redirect it to the user router
@@ -50,4 +50,5 @@ app.get('/', (req, res) => {
 // The app listener, listenes for incoming requests on the on the PORT
 app.listen(PORT, () => {
     console.log(`Server is running on PORT: ${PORT}`);
+
 });
